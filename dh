@@ -1,0 +1,69 @@
+-- made by tom
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local user = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+Frame.Position = UDim2.new(-0.266178608, 0, -0.0256410241, 0)
+Frame.Size = UDim2.new(0, 1870, 0, 697)
+Frame.Active = true
+Frame.Draggable = false
+
+user.Name = "user"
+user.Parent = ScreenGui
+user.BackgroundColor3 = Color3.fromRGB(67, 67, 67)
+user.Position = UDim2.new(0.41884312, 0, 0.019607842, 0)
+user.Size = UDim2.new(0, 200, 0, 50)
+user.Font = Enum.Font.SourceSans
+user.Text = ""
+user.TextColor3 = Color3.fromRGB(0, 0, 0)
+user.TextSize = 14.000
+
+TextLabel.Parent = ScreenGui
+TextLabel.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+TextLabel.Position = UDim2.new(0.124798715, 0, 0.196078435, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "toms alt control"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+TextLabel_2.Parent = ScreenGui
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+TextLabel_2.Position = UDim2.new(0.124798708, 0, 0.271493226, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "version 1"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 14.000
+
+TextLabel_3.Parent = ScreenGui
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+TextLabel_3.Position = UDim2.new(0.202898547, 0, 0.0196078438, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "have fun with your alts (:"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 14.000
+
+-- Scripts:
+
+local function WQZUM_fake_script() -- user.LocalScript 
+	local script = Instance.new('LocalScript', user)
+
+	name =  "Roblox Username",
+	value = ""..game.Players.LocalPlayer.Name..""
+end
+coroutine.wrap(WQZUM_fake_script)()
